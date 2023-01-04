@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+https://lucid.app/lucidchart/c1b44495-35d8-4d75-9bbc-28b62d37a71d/edit?page=Xd1-WZd7OgzK&invitationId=inv_d1dd8ddd-5e1f-4a3f-834c-df436fd09b6c#
+
 ## Getting Started
 
 First, run the development server:
