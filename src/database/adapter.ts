@@ -16,11 +16,11 @@ let _dataSource;
 async function getManager() {
   if (!_dataSource) _dataSource = await new DataSource({
     type: "mysql",
-    host: "localhost",
-    port: 8889,
-    username: "root",
-    password: "root",
-    database: "daimoon_bmp",
+    host: process.env.NEXT_PUBLIC_MYSQL_HOST,
+    port: process.env.NEXT_PUBLIC_MYSQL_PORT,
+    username: process.env.NEXT_PUBLIC_MYSQL_USERNAME,
+    password: process.env.NEXT_PUBLIC_MYSQL_PASSWORD,
+    database: process.env.NEXT_PUBLIC_MYSQL_DATABASE,
     synchronize: true,
     logging: true,
     entities: [AccountEntity, PlaylistEntity, SessionEntity, SpotifyAccountEntity, UserEntity, VerificationTokenEntity],
