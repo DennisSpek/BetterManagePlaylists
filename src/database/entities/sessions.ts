@@ -5,6 +5,7 @@ import {
   ManyToOne,
   OneToMany,
   ValueTransformer,
+  Relation
 } from "typeorm"
 
 import { UserEntity } from './users'
@@ -35,5 +36,5 @@ export class SessionEntity {
   expires!: string
 
   @ManyToOne(() => UserEntity, (user) => user.sessions)
-  user!: UserEntity
+  user!: Relation<UserEntity>
 }

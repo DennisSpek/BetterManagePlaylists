@@ -5,6 +5,7 @@ import {
   ManyToOne,
   OneToMany,
   ValueTransformer,
+  Relation
 } from "typeorm"
 
 import { UserEntity } from './users'
@@ -70,5 +71,5 @@ export class AccountEntity {
   @ManyToOne(() => UserEntity, (user) => user.accounts, {
     createForeignKeyConstraints: true,
   })
-  user!: UserEntity
+  user!: Relation<UserEntity>
 }

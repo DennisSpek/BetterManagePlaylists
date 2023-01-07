@@ -9,6 +9,7 @@ import {
 
 import { SessionEntity } from './sessions';
 import { AccountEntity } from './accounts';
+import { SpotifyAccountEntity } from './spotify_accounts';
 
 const transformer: Record<"date" | "bigint", ValueTransformer> = {
   date: {
@@ -46,4 +47,7 @@ export class UserEntity {
 
   @OneToMany(() => AccountEntity, (account) => account.userId)
   accounts!: AccountEntity[]
+
+  @OneToMany(() => SpotifyAccountEntity, (spotify_account) => spotify_account.userId)
+  spotify_accounts!: SpotifyAccountEntity[]
 }
