@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 
 export const SkeletonCard = ({ isLoading }: { isLoading?: boolean }) => {
- 
+
   return(
     <div
       className={clsx('rounded-2xl bg-gray-900/80 p-4', {

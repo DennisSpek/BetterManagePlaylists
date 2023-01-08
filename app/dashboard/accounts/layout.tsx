@@ -1,4 +1,4 @@
-export default function DashboardPlaylistLayout({
+export default function DashboardAccountLayout({
   children, // will be a page or nested layout
 }) {
   return (
