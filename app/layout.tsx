@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head />
-      <body className='bg-neutral-900/5 w-full h-full '>
+      <body className='bg-white/5 w-full h-full '>
         <Particles
           id="tsparticles"
           init={particlesInit}

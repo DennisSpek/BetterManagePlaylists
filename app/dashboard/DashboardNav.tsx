@@ -11,7 +11,7 @@ export default function DashboardNav(){
   console.log("selectedLayoutSegments", selectedLayoutSegments)
   
   return(
-    <nav className='flex flex-col bg-white/5 px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:rounded-lg '>
+    <nav className='flex flex-col bg-black/[0.3] px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:rounded-lg '>
       {nav.map((demo) => {
         return (
           <div key={demo.name}>
@@ -35,8 +35,8 @@ export default function DashboardNav(){
                     <Link
                       href={`dashboard/${item.slug}`}
                       className={clsx(
-                        'block rounded-md px-3 py-2 text-sm font-medium hover:bg-gray-800 hover:text-gray-100',
-                        { 'text-gray-400': !isActive, 'text-white': isActive },{'border-daimoon-purple': isActive, 'border-2': isActive}
+                        'block px-3 py-2 text-sm font-medium hover:text-gray-100',
+                        { 'text-gray-400': !isActive, 'text-white': isActive },{'border-daimoon-purple': isActive, 'border-l-2': isActive }
                       )}
                     >
                       {item.name}
